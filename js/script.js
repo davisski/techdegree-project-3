@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * @property {`selectedIndex`} - Sets default selected option.
    * @property {`value`} - Sets default input value.
    * @function {`initCheckboxes`} - Call to set checkboxes to default.
+   * @function {`removeTotal`} - Call to remove total price DOM element.
    */
   function initForm() {
     name.focus();
@@ -97,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     expMonth.selectedIndex = 0;
     expYear.selectedIndex = 0;
     error = {};
+    removeTotal();
   }
   /**
    * @function {`initForm`} - Call to initialize form
